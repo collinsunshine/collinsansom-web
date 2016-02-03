@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Collin Sansom Personal Website">
+    <meta name="author" content="Collin Sansom">
+
+    <title>
+      
+        Collin Sansom
+      
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap & Custom CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap_and_customizations.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+
+  </head>
+
+<body>
+<div class="brand feature">COLLIN SANSOM</div>
+
+    <!-- WHO I AM -->
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h2>entrepreneur. front end developer. brand ambassador. accountant. team leader. barista. designer. adventurer. storyteller. <strong>lover of people</strong>.</h2>
+        <p class="lead">(But I think you can learn a lot more about people by the new things they are trying, the places they are exploring, and the friendships they are fostering.)</p>
+        <a href="#" class="scroll-link" data-id="things"><div id="down" class="arrow"><i class="fa fa-angle-double-down fa-3x"></i></div></a>
+      </div><!-- container -->
+    </div><!-- jumbotron -->
+
+    <!-- THINGS I'M DOING -->
+    <div id="things" class="things text-center">
+      <h2 class="text-muted feature">IN THE WORKS</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-circle" src="assets/img/coding.png" alt="macbook and code" style="width: 140px; height: 140px;">
+          <h3>Code</h3>
+          <p>When summer classes fell through, I siezed the chance to finally <code>enter</code> into the world of 1's and 0's.</p>
+        </div><!-- /.col-md-4 -->
+        <div class="col-md-4">
+          <img class="img-circle" src="assets/img/anchor.png" alt="anchor painting" style="width: 140px; height: 140px;">
+          <h3>Paint</h3>
+          <p>There are many creative mediums I've yet to step into. This is no longer one of them.</p>
+        </div><!-- /.col-md-4 -->
+        <div class="col-md-4">
+          <img class="img-circle" src="assets/img/coffee.png" alt="latte art rosetta" style="width: 140px; height: 140px;">
+          <h3>Coffee</h3>
+          <p>Over the last year I've had the supreme opportunity to venture even further into my love affair with the brew.</p>
+        </div><!-- /.col-md -4 -->
+      </div><!-- /.row -->
+      <a href="#" class="scroll-link" data-id="contact"><div id="down" class="arrow"><i class="fa fa-angle-double-down fa-3x"></i></div></a>
+    </div><!-- /.container things -->
+
+    <!-- CONTACT ME -->
+    <div id="contact" class="contact text-center">
+      <h2>Let's chat sometime:</h2>
+      <p class="lead"><i class="fa fa-envelope-o"></i> <span id="email"><a href="mailto:collin.sansom@gmail.com">collin.sansom@gmail.com</a></span></p>
+      <p class="lead"><i class="fa fa-phone"></i> 512.917.1144</p>
+      <p class="lead"><i class="fa fa-file-text-o"></i> <span id="email"><a href="assets/img/CollinSansomResume.pdf" target="_blank">résumé</a></span></p>
+    </div><!-- /.contact -->
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <a href="https://facebook.com/collin.sansom" target="_blank" alt="Facebook"><div id="link" class="social"><i class="fa fa-facebook fa-lg"></i></div></a>
+      <a href="https://linkedin.com/in/collinsansom/" target="_blank" alt="Linked In"><div id="link" class="social"><i class="fa fa-linkedin fa-lg"></i></div></a>
+      <a href="https://twitter.com/collinsunshine" target="_blank" alt="Twitter"><div id="link" class="social"><i class="fa fa-twitter fa-lg"></i></div></a>
+      <a href="https://github.com/collinsunshine" target="_blank" alt="Github"><div id="link" class="social"><i class="fa fa-github fa-lg"></i></div></a>
+      <a href="https://instagram.com/collinsunshine" target="_blank" alt="Instagram"><div id="link" class="social"><i class="fa fa-instagram fa-lg"></i></div></a>
+      <div><p class="legal">© 2016 Collin Sansom</p></div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+          event.preventDefault();
+          var sectionID = $(this).attr("data-id");
+          scrollToID('#' + sectionID, 750);
+        });
+      });
+      // scroll function
+      function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+      }
+      if (typeof console === "undefined") {
+          console = {
+              log: function() { }
+          };
+      }
+    </script>
+
+  </body>

@@ -1,0 +1,146 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "Libre Baskerville", "Baskerville", garamond, serif;
+	width: 100%;
+	overflow: hidden;
+}
+
+.feature {
+	font-family: "Montserrat", "Helvetica Neue", helvetica, sans-serif;
+}
+
+#email a {
+	color: white;
+	cursor: auto;
+}
+
+#email:hover {
+	text-decoration: underline;
+}
+
+#link a {
+	color: #777;
+	text-decoration: none;
+	cursor: auto;
+}
+
+a #link {
+	text-decoration: underline;
+	color: #777;
+}
+
+#link{
+	color:white;
+}
+
+#link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#down {
+	color: #777;
+	text-decoration: none;
+	cursor: auto;
+}
+
+#down:hover {
+	color: #555;
+}
+
+.arrow {
+	display: inline-block;
+	width: 50px;
+}
+
+.brand {
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 50px;
+	padding: 40px;
+}
+
+.jumbotron .lead {
+	padding-top: 70px;
+	margin-bottom: 42px;
+}
+
+.jumbotron {
+	background-image: url('../img/seascape.jpg');
+	background-repeat: none;
+}
+
+.jumbotron h2 {
+	line-height: 50px;
+}
+
+.things {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.things .row {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+.things .row .col-md-4 {
+	padding-bottom: 10px;
+}
+
+.things h2 {
+	letter-spacing: 5px;
+}
+
+.things hr {
+	max-width: 500px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact {
+	padding-top: 100px;
+	padding-bottom: 120px;
+	background-image: url('../img/contact.jpg');
+}
+
+.contact h2 {
+	color: white;
+}
+
+.contact .lead {
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+footer {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.social {
+	text-decoration: none;
+	display: inline-block;
+	line-height: 38px;
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+	border: 1px dotted #777;
+	border-radius: 50%;
+	background-color: white;
+	transition: background-color .3s ease;
+}
+
+.social:hover {
+	background-color: #eee;
+}
+
+footer .legal {
+	margin-top: 10px;
+	font-size: 10px;
+}
