@@ -69,7 +69,7 @@ a #link {
 }
 
 .jumbotron {
-	background-image: url('../img/seascape.jpg');
+	background-image: url('../img/seascape.jpg') no-repeat 50% 50% fixed;
 	background-repeat: none;
 }
 
@@ -105,7 +105,7 @@ a #link {
 .contact {
 	padding-top: 100px;
 	padding-bottom: 120px;
-	background-image: url('../img/contact.jpg');
+	background-image: url('../img/contact.jpg') no-repeat 50% 50% fixed;
 }
 
 .contact h2 {
